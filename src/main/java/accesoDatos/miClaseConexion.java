@@ -8,7 +8,7 @@ public class miClaseConexion {
     private String driver="com.mysql.cj.jdbc.Driver";
     private String url="jdbc:mysql://mysql-23526b-jeanmarcosdioniciohuayta-a635.f.aivencloud.com:10622/defaultdb?sslMode=REQUIRED";
     private String login="avnadmin";
-    private String password="AVNS_ArH-5KhygEv1ABiCmm_";
+    private String password="AVNS_K5vSWEoDB4eu0K3XF2X";
 
     public Connection getConnection(){
         Connection miConexionCN=null;
