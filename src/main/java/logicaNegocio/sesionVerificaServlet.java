@@ -25,7 +25,7 @@ public class sesionVerificaServlet extends HttpServlet {
 
             String varUsuario =objetoPeticion1.getParameter("txtUsuario");
             String varPassword =objetoPeticion1.getParameter("txtPassword");
-            String [] datos=sesionClase.getFila("select * from SistemaRegistrosEpp.Usuario where usuario='"+varUsuario+"' and password='"+varPassword+"'");
+            String [] datos=sesionClase.getFila("select * from defaultdb.usuario where usuario='"+varUsuario+"' and password='"+varPassword+"'");
             if (datos==null){
                 out.println("<html>");
                 out.println("Error, el usuario ");
