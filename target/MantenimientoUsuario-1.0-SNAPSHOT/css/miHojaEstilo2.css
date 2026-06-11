@@ -1,0 +1,145 @@
+input[type="text"],
+input[type="password"],
+.form-control,
+.input-small {
+    width: 100%;
+    min-height: 44px;
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    border: 1px solid #c8d7e0;
+    border-radius: 12px;
+    background: #fdfefe;
+    color: #173545;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+.form-control:focus,
+.input-small:focus {
+    outline: none;
+    border-color: #2f8fbb;
+    box-shadow: 0 0 0 4px rgba(47, 143, 187, 0.16);
+    transform: translateY(-1px);
+}
+
+button,
+input[type="submit"],
+.btn {
+    border: 0;
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(19, 42, 56, 0.14);
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+    background: linear-gradient(135deg, #0f6d8c 0%, #0a88ae 100%);
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:focus {
+    background: linear-gradient(135deg, #2f8f5b 0%, #43a76d 100%);
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:focus {
+    background: linear-gradient(135deg, #ba4b46 0%, #d45d56 100%);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.checkbox {
+    display: block;
+    margin: 8px 0 18px;
+    color: var(--texto-secundario);
+    font-size: 14px;
+}
+
+a {
+    color: var(--primario);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primario-oscuro);
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    max-width: 720px;
+    margin: 10px auto 0;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+td {
+    padding: 6px 10px;
+    color: var(--texto-principal);
+    vertical-align: middle;
+}
+
+td:first-child {
+    width: 130px;
+    font-weight: 700;
+    color: var(--primario-oscuro);
+}
+
+p[align="right"],
+P[ALIGN="right"] {
+    max-width: 1040px;
+    margin: 0 auto 18px;
+    padding: 0 8px;
+    color: var(--texto-secundario);
+    text-align: right;
+}
+
+center {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .miEncabezado {
+        margin: 18px 14px 14px;
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    .ubicacion {
+        margin: 0 14px 24px;
+        padding: 18px;
+    }
+
+    .form-signin {
+        padding: 18px;
+    }
+
+    table,
+    tbody,
+    tr,
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    td:first-child {
+        width: auto;
+        padding-bottom: 0;
+    }
+}
