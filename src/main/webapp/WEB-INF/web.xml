@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>mantenimientoUsuarioServlet</servlet-name>
+        <servlet-class>logicaNegocio.mantenimientoUsuarioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>mantenimientoUsuarioServletBuscar</servlet-name>
+        <servlet-class>logicaNegocio.mantenimientoUsuarioServletBuscar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>nombreXMLServletVerificaSesion</servlet-name>
+        <servlet-class>logicaNegocio.sesionVerificaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mantenimientoUsuarioServlet</servlet-name>
+        <url-pattern>/mantenimientoUsuarioServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mantenimientoUsuarioServletBuscar</servlet-name>
+        <url-pattern>/mantenimientoUsuarioServletBuscar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>nombreXMLServletVerificaSesion</servlet-name>
+        <url-pattern>/miXMLServletVerificaSesion</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
